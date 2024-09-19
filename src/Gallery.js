@@ -9,10 +9,10 @@ import { findIdealNodeSearch } from './utils/findIdealNodeSearch';
 const Gallery = React.memo(function Gallery({
   photos,
   onClick,
-  direction,
-  margin,
+  direction="row",
+  margin={2},
   limitNodeSearch,
-  targetRowHeight,
+  targetRowHeight={300},
   columns,
   renderImage,
 }) {
@@ -124,10 +124,5 @@ Gallery.propTypes = {
   renderImage: PropTypes.func,
 };
 
-Gallery.defaultProps = {
-  margin: 2,
-  direction: 'row',
-  targetRowHeight: 300,
-};
 export { Photo };
 export default Gallery;
