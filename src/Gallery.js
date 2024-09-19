@@ -9,10 +9,10 @@ import { findIdealNodeSearch } from './utils/findIdealNodeSearch';
 const Gallery = React.memo(function Gallery({
   photos,
   onClick,
-  direction="row",
-  margin={2},
+  direction = "row",
+  margin = 2,
   limitNodeSearch,
-  targetRowHeight={300},
+  targetRowHeight = 300,
   columns,
   renderImage,
 }) {
